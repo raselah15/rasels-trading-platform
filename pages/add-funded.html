@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Funded Account</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<aside class="sidebar">
+
+<h2>📈 RTP</h2>
+
+<ul>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li><a href="funded.html">Funded Accounts</a></li>
+
+<li><a href="own.html">Own Accounts</a></li>
+
+<li><a href="journal.html">Trade Journal</a></li>
+
+<li><a href="statistics.html">Statistics</a></li>
+
+<li><a href="settings.html">Settings</a></li>
+
+</ul>
+
+</aside>
+
+<main class="content">
+
+<h1>Add Funded Account</h1>
+
+<form id="fundedForm">
+
+<input
+type="text"
+id="firm"
+placeholder="Prop Firm Name (Lucid, Apex...)"
+required>
+
+<input
+type="text"
+id="accountName"
+placeholder="Account Name"
+required>
+
+<select id="accountSize">
+
+<option value="">Account Size</option>
+
+<option>25K</option>
+
+<option>50K</option>
+
+<option>100K</option>
+
+<option>150K</option>
+
+<option>250K</option>
+
+</select>
+
+<select id="status">
+
+<option>Evaluation</option>
+
+<option>Funded</option>
+
+<option>Passed</option>
+
+<option>Failed</option>
+
+</select>
+
+<input
+type="number"
+id="balance"
+placeholder="Current Balance">
+
+<input
+type="number"
+id="drawdown"
+placeholder="Remaining Drawdown">
+
+<input
+type="number"
+id="profitTarget"
+placeholder="Profit Target">
+
+<button type="submit">
+
+Save Account
+
+</button>
+
+</form>
+
+</main>
+
+</div>
+
+<script src="../js/accounts.js"></script>
+
+</body>
+
+</html>

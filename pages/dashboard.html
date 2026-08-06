@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RTP Dashboard</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ===========================
+     SIDEBAR
+=========================== -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+    <img class="logo-image" src="../images/logo.png" alt="RTP Logo">
+
+    <div class="logo-text">
+
+        <h2>RTP</h2>
+
+        <p>Professional Edition</p>
+
+    </div>
+
+</div>
+
+<ul class="menu">
+
+    <li class="active">
+        <a href="dashboard.html">🏠 Dashboard</a>
+    </li>
+
+    <li>
+        <a href="trading.html">📈 Markets</a>
+    </li>
+
+    <li>
+        <a href="market-roadmap.html">🗺️ Market Roadmap</a>
+    </li>
+
+    <li>
+        <a href="trading.html">📊 Trading</a>
+    </li>
+
+    <li>
+        <a href="accounts.html">🏦 Accounts</a>
+    </li>
+
+    <li>
+        <a href="journal.html">📝 Journal</a>
+    </li>
+<li>
+    <a href="archive.html">🗂️ Archive</a>
+</li>
+
+<li>
+    <a href="rtp-analysis.html">🧠 RTP Special Analysis</a>
+</li>
+
+<li>
+    <a href="analytics.html">📊 Analytics</a>
+</li>
+
+<li>
+    <a href="settings.html">⚙️ Settings</a>
+</li>
+
+<li>
+    <a href="admin.html">🛠️ Admin Panel</a>
+</li>
+
+</ul>
+
+<div class="sidebar-footer">
+    <p>© 2026 RTP</p>
+</div>
+
+</aside>
+
+<!-- ===========================
+     MAIN CONTENT
+=========================== -->
+
+<main class="main-content">
+
+<header class="topbar">
+
+    <div class="top-left">
+
+        <button class="menu-btn">
+            ☰
+        </button>
+
+        <div class="search">
+            <input
+                type="text"
+                placeholder="Search Markets, Accounts...">
+        </div>
+
+    </div>
+
+    <div class="status-bar">
+
+        <div class="status-card">
+
+            <span>Market</span>
+
+            <strong id="market-status">
+                🟢 Market Open
+            </strong>
+
+        </div>
+
+        <div class="status-card">
+
+            <span>Session</span>
+
+            <strong>
+                New York
+            </strong>
+
+        </div>
+
+        <div class="status-card">
+
+            <span>Time</span>
+
+            <strong id="currentTime">
+                00:00:00
+            </strong>
+
+        </div>
+
+    </div>
+
+    <div class="top-right">
+
+        <button class="icon-btn" id="notificationBtn" title="Notifications">
+            🔔
+        </button>
+
+        <button class="icon-btn" id="themeBtn" title="Theme">
+            🌙
+        </button>
+
+        <button class="icon-btn" id="settingsBtn" title="Settings">
+            ⚙️
+        </button>
+
+        <div class="profile-box">
+
+            <img src="../images/profile.png" alt="Profile">
+
+            <div class="profile-info">
+
+                <h4>Rasel</h4>
+
+                <small>Administrator</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<section class="welcome">
+
+<h1>
+
+Welcome Back, Rasel 👋
+
+</h1>
+
+<p>
+
+Rasel Trading Platform
+
+Professional Enterprise Dashboard
+
+</p>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+
+<h3>
+
+Account Balance
+
+</h3>
+
+<h2 id="profitCounter">
+
+50000
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Today's P/L
+
+</h3>
+
+<h2 id="tradeCounter">
+
+320
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Win Rate
+
+</h3>
+
+<h2 id="winCounter">
+
+78
+
+</h2>
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Drawdown
+
+</h3>
+
+<h2>
+
+$1,240
+
+</h2>
+
+</div>
+
+</section>
+
+
+
+<!-- ==========================================
+     Dashboard Grid
+========================================== -->
+
+<section class="dashboard-grid">
+
+    <!-- Trading Chart -->
+
+    <div class="chart-box">
+
+        <div class="box-header">
+
+            <h2>📈 GC Gold Futures</h2>
+
+            <span class="live">
+
+                🟢 LIVE
+
+            </span>
+
+        </div>
+
+        <div class="chart-placeholder">
+
+            <h3>
+
+                TradingView Chart
+
+            </h3>
+
+            <p>
+
+                Live Trading Chart will appear here.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Watchlist -->
+
+    <div class="watchlist">
+
+        <div class="box-header">
+
+            <h2>
+
+                ⭐ Watchlist
+
+            </h2>
+
+        </div>
+
+        <table>
+
+            <tr>
+
+                <th>Symbol</th>
+
+                <th>Price</th>
+
+                <th>Change</th>
+
+            </tr>
+
+            <tr>
+
+                <td>GC</td>
+
+                <td>3388.20</td>
+
+                <td style="color:lime;">+1.24%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>MGC</td>
+
+                <td>3388.10</td>
+
+                <td style="color:lime;">+1.10%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>NQ</td>
+
+                <td>24790</td>
+
+                <td style="color:lime;">+0.87%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>MNQ</td>
+
+                <td>24791</td>
+
+                <td style="color:red;">-0.12%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>ES</td>
+
+                <td>6628</td>
+
+                <td style="color:lime;">+0.42%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>CL</td>
+
+                <td>69.42</td>
+
+                <td style="color:red;">-0.55%</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     RTP AI Coach
+========================================== -->
+
+<section class="ai-panel">
+
+<div class="box-header">
+
+<h2>
+
+🤖 RTP AI Coach
+
+</h2>
+
+</div>
+
+<p>
+
+Good Evening Rasel.
+
+</p>
+
+<ul>
+
+<li>✅ Gold Trend : Bullish</li>
+
+<li>✅ NQ Trend : Bullish</li>
+
+<li>⚠ High Impact News Today</li>
+
+<li>💰 Maximum Risk : 1%</li>
+
+<li>📓 Complete Journal After Trading</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- ==========================================
+     Quick Actions
+========================================== -->
+
+<section class="quick-actions">
+
+<button>
+
+➕ New Trade
+
+</button>
+
+<button>
+
+📝 Journal
+
+</button>
+
+<button>
+
+📷 Upload Screenshot
+
+</button>
+
+<button>
+
+🧠 AI Analysis
+
+</button>
+
+</section>
+
+
+
+<!-- ==========================================
+     Accounts Overview
+========================================== -->
+
+<section class="accounts-overview">
+
+<div class="card">
+
+<h3>
+
+Lucid
+
+</h3>
+
+<p>
+
+Evaluation Account
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+AMP Futures
+
+</h3>
+
+<p>
+
+Live Account
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Exness
+
+</h3>
+
+<p>
+
+Forex Account
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ==========================================
+     Journal Preview
+========================================== -->
+
+<section class="journal-section">
+
+    <div class="box-header">
+
+        <h2>📝 Trading Journal</h2>
+
+        <button>View All</button>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Today's Journal</h3>
+
+        <p>No journal entries available.</p>
+
+        <button>Add Journal</button>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     Archive Preview
+========================================== -->
+
+<section class="archive-section">
+
+    <div class="box-header">
+
+        <h2>🗂️ Archive</h2>
+
+        <button>Open Archive</button>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Trade Screenshots</h3>
+
+        <p>No screenshots uploaded.</p>
+
+        <button>Upload Screenshot</button>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     Analytics
+========================================== -->
+
+<section class="analytics-section">
+
+    <div class="box-header">
+
+        <h2>📊 Performance Analytics</h2>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Win Rate</h3>
+
+            <h2>78%</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Risk Reward</h3>
+
+            <h2>1 : 3</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Monthly Profit</h3>
+
+            <h2>$4,250</h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Total Trades</h3>
+
+            <h2>126</h2>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     Market News
+========================================== -->
+
+<section class="news-section">
+
+    <div class="box-header">
+
+        <h2>📰 Market News</h2>
+
+    </div>
+
+    <ul>
+
+        <li>Gold remains bullish above key support.</li>
+
+        <li>Nasdaq futures continue upward momentum.</li>
+
+        <li>USD volatility expected during upcoming news.</li>
+
+        <li>Keep risk below 1% before high-impact events.</li>
+
+    </ul>
+
+</section>
+
+<!-- ==========================================
+     Economic Calendar
+========================================== -->
+
+<section class="calendar-section">
+
+    <div class="box-header">
+
+        <h2>📅 Economic Calendar</h2>
+
+    </div>
+
+    <table>
+
+        <tr>
+            <th>Time</th>
+            <th>Event</th>
+            <th>Impact</th>
+        </tr>
+
+        <tr>
+            <td>08:30</td>
+            <td>CPI News</td>
+            <td>🔴 High</td>
+        </tr>
+
+        <tr>
+            <td>10:00</td>
+            <td>ISM PMI</td>
+            <td>🟠 Medium</td>
+        </tr>
+
+        <tr>
+            <td>14:00</td>
+            <td>FOMC Speech</td>
+            <td>🔴 High</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<!-- ==========================================
+     Footer
+========================================== -->
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Rasel Trading Platform (RTP)
+
+    </p>
+
+    <p>
+
+        Version 1.0 Professional Edition
+
+    </p>
+
+    <p>
+
+        One Platform • Every Trade • Complete Control
+
+    </p>
+
+</footer>
+<!-- ==========================================
+Dashboard Information
+========================================== -->
+
+<section class="dashboard-info">
+
+    <div class="info-card">
+        <h3>Greeting</h3>
+        <span id="greeting"></span>
+    </div>
+
+    <div class="info-card">
+        <h3>Date</h3>
+        <span id="liveDate"></span>
+    </div>
+
+    <div class="info-card">
+        <h3>Time</h3>
+        <span id="liveTime"></span>
+    </div>
+
+    <div class="info-card">
+        <h3>Market Status</h3>
+        <span id="marketStatus"></span>
+    </div>
+
+    <div class="info-card">
+        <h3>Connection</h3>
+        <span id="connectionStatus"></span>
+    </div>
+
+    <div class="info-card">
+        <h3>Last Login</h3>
+        <span id="lastLogin"></span>
+    </div>
+
+    <div class="info-card">
+        <h3>Market Update</h3>
+        <span id="marketMessage"></span>
+    </div>
+
+</section>
+
+
+
+</main>
+
+</div>
+
+<!-- ==========================================
+     STEP 21A
+     Quick Navigation Buttons
+========================================== -->
+
+<section class="quick-navigation">
+
+    <button onclick="location.href='accounts.html'">
+        👤 Accounts
+    </button>
+
+    <button onclick="location.href='trading.html'">
+        📈 Trading
+    </button>
+
+    <button onclick="location.href='journal.html'">
+        📖 Journal
+    </button>
+
+    <button onclick="location.href='archive.html'">
+        📂 Archive
+    </button>
+
+    <button onclick="location.href='analytics.html'">
+        📊 Analytics
+    </button>
+
+    <button onclick="location.href='rtp-analysis.html'">
+        🤖 RTP Analysis
+    </button>
+
+    <button onclick="location.href='market-roadmap.html'">
+        🗺️ Market Roadmap
+    </button>
+
+    <button onclick="location.href='settings.html'">
+        ⚙️ Settings
+    </button>
+
+</section>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

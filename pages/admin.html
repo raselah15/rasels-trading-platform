@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | RTP</title>
+
+<link rel="stylesheet" href="../css/admin.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ==========================================
+     SIDEBAR
+========================================== -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<img src="../images/logo.png" alt="RTP Logo" class="logo-image">
+
+<div class="logo-text">
+
+<h2>RTP</h2>
+
+<p>Admin Panel</p>
+
+</div>
+
+</div>
+
+<ul class="menu">
+
+<li class="active">
+<a href="#">
+🏠 Dashboard
+</a>
+</li>
+
+<li>
+<a href="#">
+👥 Users
+</a>
+</li>
+
+<li>
+<a href="#">
+💼 Accounts
+</a>
+</li>
+
+<li>
+<a href="#">
+📈 Trades
+</a>
+</li>
+
+<li>
+<a href="#">
+📊 Analytics
+</a>
+</li>
+
+<li>
+<a href="#">
+⚙️ Settings
+</a>
+</li>
+
+<li>
+<a href="#">
+🚪 Logout
+</a>
+</li>
+
+</ul>
+
+</aside>
+
+<!-- ==========================================
+     MAIN CONTENT
+========================================== -->
+
+<main class="main-content">
+
+
+
+
+<!-- ==========================================
+     TOP HEADER
+========================================== -->
+
+<header class="topbar">
+
+    <div class="top-left">
+
+        <h1>🛠️ Admin Dashboard</h1>
+
+        <p>Manage the Rasel Trading Platform</p>
+
+    </div>
+
+    <div class="top-right">
+
+        <input
+            type="text"
+            placeholder="Search users, trades..."
+            class="search-box"
+        >
+
+        <button class="icon-btn">🔔</button>
+
+        <button class="icon-btn">🌙</button>
+
+        <div class="profile-box">
+
+            <img src="../images/profile.png" alt="Admin">
+
+            <div>
+
+                <h4>Rasel</h4>
+
+                <small>Super Admin</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ==========================================
+     DASHBOARD CARDS
+========================================== -->
+
+<section class="dashboard-cards">
+
+    <div class="card">
+
+        <h3>Total Users</h3>
+
+        <h2>1,245</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Active Accounts</h3>
+
+        <h2>328</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Today's Trades</h3>
+
+        <h2>892</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Revenue</h3>
+
+        <h2>$28,540</h2>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Pending Requests</h3>
+
+        <h2>18</h2>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     RECENT USERS
+========================================== -->
+
+<section class="table-section">
+
+    <div class="section-header">
+
+        <h2>👥 Recent Users</h2>
+
+        <button class="view-btn">View All</button>
+
+    </div>
+
+    <table class="admin-table">
+
+        <thead>
+
+            <tr>
+
+                <th>User</th>
+
+                <th>Email</th>
+
+                <th>Role</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>Rasel Ahmmed</td>
+
+                <td>rasel@example.com</td>
+
+                <td>Admin</td>
+
+                <td><span class="badge active">Active</span></td>
+
+                <td><button class="action-btn">Edit</button></td>
+
+            </tr>
+
+            <tr>
+
+                <td>John Smith</td>
+
+                <td>john@example.com</td>
+
+                <td>User</td>
+
+                <td><span class="badge active">Active</span></td>
+
+                <td><button class="action-btn">Edit</button></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Sarah Lee</td>
+
+                <td>sarah@example.com</td>
+
+                <td>User</td>
+
+                <td><span class="badge suspended">Suspended</span></td>
+
+                <td><button class="action-btn">Review</button></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- ==========================================
+     RECENT TRADES
+========================================== -->
+
+<section class="table-section">
+
+    <div class="section-header">
+
+        <h2>📈 Recent Trades</h2>
+
+        <button class="view-btn">View All</button>
+
+    </div>
+
+    <table class="admin-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Trader</th>
+
+                <th>Symbol</th>
+
+                <th>Side</th>
+
+                <th>P/L</th>
+
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>Rasel</td>
+
+                <td>GC</td>
+
+                <td>BUY</td>
+
+                <td class="profit">+$450</td>
+
+                <td><span class="badge active">Closed</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>John</td>
+
+                <td>NQ</td>
+
+                <td>SELL</td>
+
+                <td class="loss">-$180</td>
+
+                <td><span class="badge active">Closed</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Sarah</td>
+
+                <td>ES</td>
+
+                <td>BUY</td>
+
+                <td class="profit">+$920</td>
+
+                <td><span class="badge pending">Open</span></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+

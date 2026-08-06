@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RTP Special Analysis | RTP</title>
+
+<link rel="stylesheet" href="../css/rtp-analysis.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ==========================================
+Sidebar
+========================================== -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<img src="../images/logo.png" alt="RTP Logo">
+
+<div>
+
+<h2>RTP</h2>
+
+<p>Professional Edition</p>
+
+</div>
+
+</div>
+
+<ul class="menu">
+
+<li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+<li><a href="accounts.html">🏦 Accounts</a></li>
+
+<li><a href="trading.html">📈 Trading</a></li>
+
+<li><a href="market-roadmap.html">🗺️ Market Roadmap</a></li>
+
+<li><a href="journal.html">📝 Journal</a></li>
+
+<li><a href="archive.html">🗂️ Archive</a></li>
+
+<li class="active"><a href="#">🧠 RTP Special Analysis</a></li>
+
+<li><a href="#">📊 Analytics</a></li>
+
+<li><a href="#">⚙️ Settings</a></li>
+
+</ul>
+
+</aside>
+
+<!-- ==========================================
+Main Content
+========================================== -->
+
+<main class="main-content">
+
+<header class="topbar">
+
+<h1>
+
+🧠 RTP Special Analysis
+
+</h1>
+
+<div class="market-buttons">
+
+<button>GC</button>
+
+<button>MGC</button>
+
+<button>NQ</button>
+
+<button>MNQ</button>
+
+<button>ES</button>
+
+<button>CL</button>
+
+<button>Forex</button>
+
+</div>
+
+</header>
+
+<!-- ==========================================
+Analysis Overview
+========================================== -->
+
+<section class="analysis-grid">
+
+<div class="analysis-card">
+
+<h3>📅 Analysis Date</h3>
+
+<input type="date">
+
+</div>
+
+<div class="analysis-card">
+
+<h3>📊 Market Bias</h3>
+
+<select>
+
+<option>Bullish</option>
+
+<option>Bearish</option>
+
+<option>Neutral</option>
+
+</select>
+
+</div>
+
+<div class="analysis-card">
+
+<h3>📈 Trend</h3>
+
+<select>
+
+<option>Uptrend</option>
+
+<option>Downtrend</option>
+
+<option>Range</option>
+
+</select>
+
+</div>
+
+<div class="analysis-card">
+
+<h3>⭐ Confidence</h3>
+
+<select>
+
+<option>High</option>
+
+<option>Medium</option>
+
+<option>Low</option>
+
+</select>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+Key Levels
+========================================== -->
+
+<section class="key-levels">
+
+<div class="box-header">
+
+<h2>
+
+🎯 Key Levels
+
+</h2>
+
+</div>
+
+<table>
+
+<tr>
+
+<th>Level</th>
+
+<th>Price</th>
+
+</tr>
+
+<tr>
+
+<td>Resistance 2</td>
+
+<td><input type="number" placeholder="3415.00"></td>
+
+</tr>
+
+<tr>
+
+<td>Resistance 1</td>
+
+<td><input type="number" placeholder="3400.00"></td>
+
+</tr>
+
+<tr>
+
+<td>Current Price</td>
+
+<td><input type="number" placeholder="3388.20"></td>
+
+</tr>
+
+<tr>
+
+<td>Support 1</td>
+
+<td><input type="number" placeholder="3372.00"></td>
+
+</tr>
+
+<tr>
+
+<td>Support 2</td>
+
+<td><input type="number" placeholder="3355.00"></td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- ==========================================
+Liquidity Zones
+========================================== -->
+
+<section class="liquidity-zones">
+
+<div class="box-header">
+
+<h2>
+
+💧 Liquidity Zones
+
+</h2>
+
+</div>
+
+<textarea
+
+rows="6"
+
+placeholder="Write liquidity zones, order blocks, FVG, inducement, and important observations..."
+
+></textarea>
+
+</section>
+
+
+
+<!-- ==========================================
+     Market Narrative
+========================================== -->
+
+<section class="market-narrative">
+
+    <div class="box-header">
+
+        <h2>📖 Market Narrative</h2>
+
+    </div>
+
+    <textarea
+        rows="8"
+        placeholder="Write today's market narrative..."
+    ></textarea>
+
+</section>
+
+<!-- ==========================================
+     Trading Plan
+========================================== -->
+
+<section class="trading-plan">
+
+    <div class="box-header">
+
+        <h2>🎯 Trading Plan</h2>
+
+    </div>
+
+    <div class="plan-grid">
+
+        <div>
+
+            <label>Entry Price</label>
+
+            <input type="number" placeholder="3388.20">
+
+        </div>
+
+        <div>
+
+            <label>Stop Loss</label>
+
+            <input type="number" placeholder="3383.20">
+
+        </div>
+
+        <div>
+
+            <label>Take Profit 1</label>
+
+            <input type="number" placeholder="3395.00">
+
+        </div>
+
+        <div>
+
+            <label>Take Profit 2</label>
+
+            <input type="number" placeholder="3405.00">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     Risk Management
+========================================== -->
+
+<section class="risk-management">
+
+    <div class="box-header">
+
+        <h2>⚖️ Risk Management</h2>
+
+    </div>
+
+    <div class="plan-grid">
+
+        <div>
+
+            <label>Account Risk (%)</label>
+
+            <input type="number" placeholder="1">
+
+        </div>
+
+        <div>
+
+            <label>Maximum Daily Loss</label>
+
+            <input type="number" placeholder="500">
+
+        </div>
+
+        <div>
+
+            <label>Risk Reward</label>
+
+            <input type="text" placeholder="1 : 3">
+
+        </div>
+
+        <div>
+
+            <label>Position Size</label>
+
+            <input type="number" placeholder="2">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     High Impact News
+========================================== -->
+
+<section class="news-impact">
+
+    <div class="box-header">
+
+        <h2>📰 High Impact News</h2>
+
+    </div>
+
+    <table>
+
+        <tr>
+
+            <th>Time</th>
+
+            <th>Event</th>
+
+            <th>Impact</th>
+
+        </tr>
+
+        <tr>
+
+            <td>08:30</td>
+
+            <td>CPI</td>
+
+            <td>🔴 High</td>
+
+        </tr>
+
+        <tr>
+
+            <td>10:00</td>
+
+            <td>ISM PMI</td>
+
+            <td>🟠 Medium</td>
+
+        </tr>
+
+        <tr>
+
+            <td>14:00</td>
+
+            <td>FOMC Speech</td>
+
+            <td>🔴 High</td>
+
+        </tr>
+
+    </table>
+
+</section>
+
+<!-- ==========================================
+     Analysis Checklist
+========================================== -->
+
+<section class="analysis-checklist">
+
+    <div class="box-header">
+
+        <h2>✅ Analysis Checklist</h2>
+
+    </div>
+
+    <ul>
+
+        <li><input type="checkbox"> Daily Bias Confirmed</li>
+
+        <li><input type="checkbox"> Weekly Bias Confirmed</li>
+
+        <li><input type="checkbox"> Liquidity Identified</li>
+
+        <li><input type="checkbox"> Entry Plan Ready</li>
+
+        <li><input type="checkbox"> Risk Calculated</li>
+
+        <li><input type="checkbox"> News Checked</li>
+
+    </ul>
+
+</section>
+
+
+
+<!-- ==========================================
+     RTP AI Analysis
+========================================== -->
+
+<section class="ai-analysis">
+
+    <div class="box-header">
+
+        <h2>🤖 RTP AI Analysis</h2>
+
+    </div>
+
+    <div class="analysis-card">
+
+        <p>
+
+            ✔ Market structure remains bullish.
+
+        </p>
+
+        <p>
+
+            ✔ Wait for liquidity sweep before entry.
+
+        </p>
+
+        <p>
+
+            ✔ Preferred Risk Reward: 1 : 3
+
+        </p>
+
+        <p>
+
+            ✔ Overall Confidence: 85%
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     Personal Analysis Notes
+========================================== -->
+
+<section class="personal-analysis">
+
+    <div class="box-header">
+
+        <h2>📝 Personal Analysis</h2>
+
+    </div>
+
+    <textarea
+        rows="8"
+        placeholder="Write your own analysis..."
+    ></textarea>
+
+</section>
+
+<!-- ==========================================
+     Chart Screenshot
+========================================== -->
+
+<section class="chart-upload">
+
+    <div class="box-header">
+
+        <h2>📷 Chart Screenshot</h2>
+
+    </div>
+
+    <input type="file" accept="image/*">
+
+</section>
+
+<!-- ==========================================
+     Attach Documents
+========================================== -->
+
+<section class="attach-files">
+
+    <div class="box-header">
+
+        <h2>📎 Attach Documents</h2>
+
+    </div>
+
+    <input type="file" multiple>
+
+</section>
+
+<!-- ==========================================
+     Action Buttons
+========================================== -->
+
+<section class="analysis-actions">
+
+    <button class="save-btn">
+
+        💾 Save Analysis
+
+    </button>
+
+    <button class="export-btn">
+
+        📤 Export Analysis
+
+    </button>
+
+    <button class="clear-btn">
+
+        🗑 Clear Analysis
+
+    </button>
+
+</section>
+
+<!-- ==========================================
+     Analysis History
+========================================== -->
+
+<section class="analysis-history">
+
+    <div class="box-header">
+
+        <h2>📚 Previous Analysis</h2>
+
+    </div>
+
+    <table>
+
+        <tr>
+
+            <th>Date</th>
+
+            <th>Market</th>
+
+            <th>Bias</th>
+
+            <th>Result</th>
+
+        </tr>
+
+        <tr>
+
+            <td>2026-08-03</td>
+
+            <td>GC</td>
+
+            <td>Bullish</td>
+
+            <td>✅ TP Hit</td>
+
+        </tr>
+
+        <tr>
+
+            <td>2026-08-02</td>
+
+            <td>NQ</td>
+
+            <td>Bearish</td>
+
+            <td>❌ SL Hit</td>
+
+        </tr>
+
+        <tr>
+
+            <td>2026-08-01</td>
+
+            <td>ES</td>
+
+            <td>Bullish</td>
+
+            <td>✅ TP Hit</td>
+
+        </tr>
+
+    </table>
+
+</section>
+
+<!-- ==========================================
+     Footer
+========================================== -->
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Rasel Trading Platform (RTP)
+
+    </p>
+
+    <p>
+
+        RTP Special Analysis Module v1.0
+
+    </p>
+
+</footer>
+
+</main>
+
+</div>
+
+<script src="../js/rtp-analysis.js"></script>
+
+</body>
+
+</html>

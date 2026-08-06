@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trade Archive | RTP</title>
+
+<link rel="stylesheet" href="../css/archive.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ==========================================
+Sidebar
+========================================== -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<img src="../images/logo.png" alt="RTP Logo">
+
+<div>
+
+<h2>RTP</h2>
+
+<p>Professional Edition</p>
+
+</div>
+
+</div>
+
+<ul class="menu">
+
+<li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+<li><a href="accounts.html">🏦 Accounts</a></li>
+
+<li><a href="trading.html">📈 Trading</a></li>
+
+<li><a href="market-roadmap.html">🗺️ Market Roadmap</a></li>
+
+<li><a href="journal.html">📝 Journal</a></li>
+
+<li class="active"><a href="#">🗂️ Archive</a></li>
+
+<li><a href="#">📊 Analytics</a></li>
+
+<li><a href="#">⚙️ Settings</a></li>
+
+</ul>
+
+</aside>
+
+<!-- ==========================================
+Main Content
+========================================== -->
+
+<main class="main-content">
+
+<header class="topbar">
+
+<h1>
+
+🗂️ Trade Archive
+
+</h1>
+
+<button>
+
+Export Archive
+
+</button>
+
+</header>
+
+<!-- ==========================================
+Search & Filters
+========================================== -->
+
+<section class="archive-toolbar">
+
+<input
+type="text"
+placeholder="Search trades..."
+id="searchTrade"
+>
+
+<select>
+
+<option>All Symbols</option>
+
+<option>GC</option>
+
+<option>MGC</option>
+
+<option>NQ</option>
+
+<option>MNQ</option>
+
+<option>ES</option>
+
+<option>MES</option>
+
+<option>CL</option>
+
+<option>Forex</option>
+
+</select>
+
+<input type="date">
+
+<button>
+
+⭐ Favorites
+
+</button>
+
+</section>
+
+<!-- ==========================================
+Archive Summary
+========================================== -->
+
+<section class="archive-summary">
+
+<div class="summary-card">
+
+<h3>Total Trades</h3>
+
+<h2>128</h2>
+
+</div>
+
+<div class="summary-card">
+
+<h3>Winning Trades</h3>
+
+<h2>92</h2>
+
+</div>
+
+<div class="summary-card">
+
+<h3>Losing Trades</h3>
+
+<h2>36</h2>
+
+</div>
+
+<div class="summary-card">
+
+<h3>Win Rate</h3>
+
+<h2>71.9%</h2>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+Archived Trades
+========================================== -->
+
+<section class="archive-table">
+
+<div class="box-header">
+
+<h2>
+
+📂 Archived Trades
+
+</h2>
+
+</div>
+
+<table>
+
+<tr>
+
+<th>Date</th>
+
+<th>Symbol</th>
+
+<th>Direction</th>
+
+<th>Result</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>2026-08-03</td>
+
+<td>GC</td>
+
+<td>BUY</td>
+
+<td style="color:lime;">
+
++$245
+
+</td>
+
+<td>
+
+Completed
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>2026-08-02</td>
+
+<td>NQ</td>
+
+<td>SELL</td>
+
+<td style="color:red;">
+
+-$90
+
+</td>
+
+<td>
+
+Completed
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>2026-08-01</td>
+
+<td>ES</td>
+
+<td>BUY</td>
+
+<td style="color:lime;">
+
++$180
+
+</td>
+
+<td>
+
+Completed
+
+</td>
+
+</tr>
+
+</table>
+
+</section>
+
+
+<!-- ==========================================
+     Screenshot Gallery
+========================================== -->
+
+<section class="gallery-section">
+
+    <div class="box-header">
+
+        <h2>📷 Screenshot Gallery</h2>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-card">
+
+            <div class="image-placeholder">
+
+                Before Trade
+
+            </div>
+
+            <p>GC - Buy Setup</p>
+
+        </div>
+
+        <div class="gallery-card">
+
+            <div class="image-placeholder">
+
+                During Trade
+
+            </div>
+
+            <p>NQ - Trade Management</p>
+
+        </div>
+
+        <div class="gallery-card">
+
+            <div class="image-placeholder">
+
+                After Trade
+
+            </div>
+
+            <p>ES - Trade Result</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     Archived Journal
+========================================== -->
+
+<section class="journal-archive">
+
+    <div class="box-header">
+
+        <h2>📝 Archived Journal</h2>
+
+    </div>
+
+    <textarea
+        rows="6"
+        placeholder="Archived journal notes will appear here..."
+    ></textarea>
+
+</section>
+
+<!-- ==========================================
+     Trade Statistics
+========================================== -->
+
+<section class="trade-statistics">
+
+    <div class="summary-card">
+
+        <h3>Best Trade</h3>
+
+        <h2>+$860</h2>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>Worst Trade</h3>
+
+        <h2>-$320</h2>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>Average Win</h3>
+
+        <h2>$245</h2>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>Average Loss</h3>
+
+        <h2>$118</h2>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     Restore Trade
+========================================== -->
+
+<section class="restore-section">
+
+    <div class="box-header">
+
+        <h2>🔄 Restore Archived Trade</h2>
+
+    </div>
+
+    <button class="restore-btn">
+
+        Restore Selected Trade
+
+    </button>
+
+</section>
+
+<!-- ==========================================
+     RTP AI Archive Review
+========================================== -->
+
+<section class="ai-review">
+
+    <div class="box-header">
+
+        <h2>
+
+            🤖 RTP AI Archive Review
+
+        </h2>
+
+    </div>
+
+    <div class="review-card">
+
+        <p>
+
+            ✔ Your best performance came from Gold (GC).
+
+        </p>
+
+        <p>
+
+            ✔ Average Risk Reward: 1 : 2.8
+
+        </p>
+
+        <p>
+
+            ✔ Win Rate: 71.9%
+
+        </p>
+
+        <p>
+
+            ⚠ Avoid overtrading during news events.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     Personal Archive Notes
+========================================== -->
+
+<section class="archive-notes">
+
+    <div class="box-header">
+
+        <h2>
+
+            📝 Personal Archive Notes
+
+        </h2>
+
+    </div>
+
+    <textarea
+        rows="8"
+        placeholder="Write archive notes here..."
+    ></textarea>
+
+</section>
+
+<!-- ==========================================
+     Archive Actions
+========================================== -->
+
+<section class="archive-actions">
+
+    <button class="export-pdf">
+
+        📄 Export PDF
+
+    </button>
+
+    <button class="export-csv">
+
+        📊 Export CSV
+
+    </button>
+
+    <button class="delete-archive">
+
+        🗑 Delete Archive
+
+    </button>
+
+</section>
+
+<!-- ==========================================
+     Favorite Trades
+========================================== -->
+
+<section class="favorite-trades">
+
+    <div class="box-header">
+
+        <h2>
+
+            ⭐ Favorite Trades
+
+        </h2>
+
+    </div>
+
+    <table>
+
+        <tr>
+
+            <th>Date</th>
+
+            <th>Symbol</th>
+
+            <th>Result</th>
+
+        </tr>
+
+        <tr>
+
+            <td>2026-08-03</td>
+
+            <td>GC</td>
+
+            <td style="color:lime;">
+
+                +$420
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>2026-07-29</td>
+
+            <td>NQ</td>
+
+            <td style="color:lime;">
+
+                +$310
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</section>
+
+<!-- ==========================================
+     Footer
+========================================== -->
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Rasel Trading Platform (RTP)
+
+    </p>
+
+    <p>
+
+        Archive Module v1.0
+
+    </p>
+
+</footer>
+
+<!-- ==========================================
+     STEP 20D
+     Archive JavaScript Support
+========================================== -->
+
+<section class="archive-summary">
+
+    <div class="summary-card">
+
+        <h3>Total Archives</h3>
+
+        <h2 id="totalArchives">0</h2>
+
+    </div>
+
+</section>
+
+<section class="archive-toolbar">
+
+    <input
+        type="text"
+        id="searchArchive"
+        placeholder="🔍 Search Archive..."
+        onkeyup="searchArchives()"
+    >
+
+    <button onclick="addArchive()">
+        ➕ Add Archive
+    </button>
+
+    <button onclick="refreshArchives()">
+        🔄 Refresh
+    </button>
+
+    <button onclick="resetArchives()">
+        ♻ Reset
+    </button>
+
+</section>
+
+<section
+    class="archive-list"
+    id="archiveList">
+
+</section>
+
+</main>
+
+</div>
+
+<script src="../js/archive.js"></script>
+
+</body>
+
+</html>
