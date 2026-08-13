@@ -76,7 +76,7 @@ loginForm.addEventListener("submit", async function(e){
 
 
         window.location.href =
-        "pages/dashboard.html";
+         "dashboard.html";
 
 
 
