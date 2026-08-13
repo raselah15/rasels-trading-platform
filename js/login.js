@@ -146,8 +146,7 @@ alert(
 
 
 
-window.location.href =
-"pages/dashboard.html";
+window.location.href = "dashboard.html";
 
 
 
