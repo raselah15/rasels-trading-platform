@@ -3,13 +3,19 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rasel's Trading Platform</title>
+    <title>Login | Rasel Trading Platform</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -17,66 +23,89 @@
 
 <div class="login-container">
 
-<div class="login-box">
+    <div class="login-card">
 
-<h1>📈 Rasel's Trading Platform</h1>
+        <div class="logo-area">
 
-<p>Professional Futures Trading Dashboard</p>
+            <img src="../images/logo.png" alt="RTP Logo" class="logo">
 
-<form id="loginForm">
+            <h1>Rasel Trading Platform</h1>
 
-<input
-type="email"
-id="email"
-placeholder="Email Address"
-required
->
+            <p>Professional Trading Dashboard</p>
 
-<input
-type="password"
-id="password"
-placeholder="Password"
-required
->
+        </div>
 
-<button type="submit">
+        <form id="loginForm">
 
-Login
+            <div class="input-group">
 
-</button>
+                <label>Email Address</label>
 
-</form>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
 
-<br>
+            </div>
 
-<button id="googleLogin">
+            <div class="input-group">
 
-Login with Google
+                <label>Password</label>
 
-</button>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required>
 
-<br><br>
+            </div>
 
-<a href="#" id="forgotPassword">
+            <button
+                type="submit"
+                class="login-btn">
 
-Forgot Password?
+                Login
 
-</a>
+            </button>
 
-<br><br>
+            <button
+                type="button"
+                id="googleLogin"
+                class="google-btn">
 
-<a href="pages/register.html">
+                Continue with Google
 
-Create Account
+            </button>
 
-</a>
+        </form>
+
+        <div class="login-links">
+
+            <a href="#" id="forgotPassword">Forgot Password?</a>
+
+            <p>
+
+                Don't have an account?
+
+                <a href="register.html">
+
+                    Register
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
 
 </div>
 
-</div>
-
-<script type="module" src="js/login.js"></script>
+<script type="module" src="../js/login.js"></script>
 
 </body>
 
 </html>
+
+
