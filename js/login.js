@@ -135,3 +135,97 @@ if (forgotBtn) {
     });
 
 }
+
+
+
+
+// ================================
+// Login Function (Added)
+// ================================
+
+
+document.addEventListener("DOMContentLoaded", function(){
+
+
+    const loginBtn = document.querySelector("button");
+
+
+    if(loginBtn){
+
+
+        loginBtn.addEventListener("click", function(){
+
+
+
+            const emailInput = document.querySelector(
+                "input[type='email']"
+            );
+
+
+            const passwordInput = document.querySelector(
+                "input[type='password']"
+            );
+
+
+
+            if(!emailInput || !passwordInput){
+
+                console.log("Login fields not found");
+
+                return;
+
+            }
+
+
+
+            const email = emailInput.value.trim();
+
+            const password = passwordInput.value.trim();
+
+
+
+
+
+            // Demo Login
+
+
+            if(
+                email === "admin@gmail.com" &&
+                password === "123456"
+            ){
+
+
+
+                alert("Login Successful ✅");
+
+
+
+                window.location.href =
+                "pages/dashboard.html";
+
+
+
+            }
+
+            else{
+
+
+
+                alert(
+                    "Wrong Email or Password ❌"
+                );
+
+
+
+            }
+
+
+
+        });
+
+
+    }
+
+
+
+});
