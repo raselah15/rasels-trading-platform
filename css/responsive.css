@@ -1,0 +1,36 @@
+@media only screen and (max-width: 768px) {
+
+    aside,
+    .sidebar,
+    .menu {
+        width: 100% !important;
+    }
+
+    .main-content,
+    .content,
+    .dashboard,
+    .dashboard-container {
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding: 10px !important;
+    }
+
+    .card,
+    .account-card,
+    .stats-card {
+        width: 100% !important;
+        margin-bottom: 15px !important;
+    }
+
+    .account-grid,
+    .cards,
+    .stats-container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
